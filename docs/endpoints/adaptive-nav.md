@@ -8,7 +8,7 @@ nav_order: 5
 # Adaptive Navigation
 {: .no_toc }
 - *NOTE*: Coordinates should be specified as [longitude, latitude].
-- For all possible route options, see types [on GitHub](https://github.com/polaris-maps/polaris-api/blob/main/routes/types.js).
+- For all possible route options, see types [on GitHub](https://github.com/polaris-maps/luminary-api/blob/main/routes/types.js).
 - For quick testing without making POST request, use the [/app/route/hardcodedtest](https://accessnav-api-git-ctine987.apps.cloudapps.unc.edu/app/route/hardcodedtest) route.
 
 ## Table of contents

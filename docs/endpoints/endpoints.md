@@ -9,6 +9,6 @@ permalink: /docs/endpoints
 # Endpoints
 
 For access to the API. 
-See schemas [here](https://github.com/polaris-maps/polaris-api/tree/main/schemas).
+See schemas [here](https://github.com/polaris-maps/luminary-api/tree/main/schemas).
 
 {: .fs-6 .fw-300 }

@@ -18,7 +18,7 @@ nav_order: 2
 **NOTE** Links have yet to be updated.
 
 ## Part 0: Set up connection to MongoDB
-See [this page](https://polaris-maps.github.io/polaris-api-docs/docs/resources/mongodb-conn/) (mongodb-conn.md) for instructions on setting up a preliminary connection to MongoDB!
+See [this page](https://polaris-maps.github.io/luminary-api-docs/docs/resources/mongodb-conn/) (mongodb-conn.md) for instructions on setting up a preliminary connection to MongoDB!
 
 ## Part 1: Back end
 1. Create a new JS file defining the schema in the [api/schemas folder](https://github.com/comp426-2022-spring/a99-polaris/tree/main/api/schemas). Feel free to model it after [issue.js](https://github.com/comp426-2022-spring/a99-polaris/blob/main/api/schemas/issue.js) or [user.js](https://github.com/comp426-2022-spring/a99-polaris/blob/main/api/schemas/user.js).
@@ -31,7 +31,7 @@ See [this page](https://polaris-maps.github.io/polaris-api-docs/docs/resources/m
     ```
 5. Test and document your API endpoints. 
     - Testing: See [api-tests/issue.txt](https://github.com/comp426-2022-spring/a99-polaris/blob/main/docs/planning/how-to-add-and-use-collection-mern/api-tests/issue.txt) for examples.
-    - Documentation: Open a pull request in [the Polaris API Docs repository](https://github.com/polaris-maps/polaris-api-docs) to add your endpoints!
+    - Documentation: Open a pull request in [the Luminary API Docs repository](https://github.com/polaris-maps/luminary-api-docs) to add your endpoints!
 
 ## Part 2: Front end
 1. Add a service by `cd` ing into the client folder and executing the following command, replacing `<service name>` with the name of your service, i.e. issue or login:

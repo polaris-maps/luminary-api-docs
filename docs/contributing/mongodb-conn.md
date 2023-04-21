@@ -20,7 +20,7 @@ nav_order: 1
 
 ## Basic Connection
 1. Accept the invite (if invited to the MongoDB project) and create a MongoDB account, if you have not already.
-2. Open the Polaris project. Under Security in the left sidebar, click on Database Access. Add yourself as a new database user with read/write access.
+2. Open the Luminary project. Under Security in the left sidebar, click on Database Access. Add yourself as a new database user with read/write access.
     - Since we likely will not be making multiple clusters, it would be best to select 'Read and write to any database' rather than 'Atlas admin' as one's role for now. 
 3. Return to Database under Deployment and click on the "Connect" button. Click on "Connect your application," then select your driver (Node.js) and version (4.0 or later).
 4. Copy the provided connection string and paste it at the end of the lines beginning with `ATLAS_URI` in the provided `config_template.env` to set the relevant `ATLAS_URI` environment variables. Rename `config_template.env` as `config.env`.

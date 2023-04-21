@@ -1,3 +1,3 @@
-# Polaris API Docs
+# Luminary API Docs
 
-This site contains information related to the Polaris Maps project API.
+This site contains information related to the Luminary project API.
