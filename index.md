@@ -11,7 +11,7 @@ permalink: /
 Navigation, for everyone.
 {: .fs-6 .fw-300 }
 
-[View the API](https://github.com/polaris-maps/luminary-api){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[View the API](https://accessnav-api-git-ctine987.apps.cloudapps.unc.edu/app/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 [Luminary Organization](https://github.com/polaris-maps){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
