@@ -2,7 +2,7 @@
 layout: default
 title: Outdoor Issue
 parent: Endpoints
-nav_order: 5
+nav_order: 4
 ---
 
 # Outdoor Issue

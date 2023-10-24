@@ -2,7 +2,7 @@
 layout: default
 title: Buildings
 parent: Endpoints
-nav_order: 3
+nav_order: 2
 ---
 
 # Buildings

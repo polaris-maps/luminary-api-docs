@@ -9,7 +9,7 @@ nav_order: 5
 {: .no_toc }
 - *NOTE*: Coordinates should be specified as [longitude, latitude].
 - For all possible route options, see types [on GitHub](https://github.com/polaris-maps/luminary-api/blob/main/routes/types.js).
-- For quick testing without making POST request, use the [/app/route/hardcodedtest](https://accessnav-api-git-ctine987.apps.cloudapps.unc.edu/app/route/hardcodedtest) route.
+- For quick testing without making POST request, use the [/app/route/hardcoded-test](https://accessnav-api-git-ctine987.apps.cloudapps.unc.edu/app/route/hardcoded-test) route.
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -529,6 +529,229 @@ curl -X POST 'https://accessnav-api-git-ctine987.apps.cloudapps.unc.edu/app/rout
             "graph_date": "2023-03-10T14:09:02Z"
         }
     }
+}
+```
+{% endraw %}
+
+### /app/route/minimize-door-distance
+Given source and destination building ids (and appropriate constraints), return latitudes/longitudes of valid source and destination doors.
+
+#### Request cURL (Minimal Request)
+```
+curl -X POST 'https://accessnav-api-git-ctine987.apps.cloudapps.unc.edu/app/route/minimize-door-distance' -H "Content-type: application/json" -d '{
+    "source": "625e43d481807ff3dc5f1615",
+    "destination": "625e43d481807ff3dc5f15f9"
+}'
+```
+
+#### Request cURL (Detailed Request)
+```
+curl -X POST 'https://accessnav-api-git-ctine987.apps.cloudapps.unc.edu/app/route/minimize-door-distance' -H "Content-type: application/json" -d '{
+    "source": "625e43d481807ff3dc5f1615",
+    "destination": "625e43d481807ff3dc5f15f9",
+    "exclude_stairs": true,
+    "require_automatic": false
+}'
+```
+
+#### Response body
+{% raw %}
+```
+{
+    "metadata": {
+        "attribution": "openrouteservice.org | OpenStreetMap contributors",
+        "service": "matrix",
+        "timestamp": 1698114826231,
+        "query": {
+            "locations": [
+                [
+                    -79.053187,
+                    35.909526
+                ],
+                [
+                    -79.052961,
+                    35.909809
+                ],
+                [
+                    -79.053554,
+                    35.910059
+                ],
+                [
+                    -79.05317,
+                    35.9102
+                ],
+                [
+                    -79.05331,
+                    35.909694
+                ],
+                [
+                    -79.052948,
+                    35.909613
+                ],
+                [
+                    -79.052999,
+                    35.909907
+                ],
+                [
+                    -79.053447,
+                    35.909896
+                ],
+                [
+                    -79.05309,
+                    35.91003
+                ],
+                [
+                    -79.055098,
+                    35.912506
+                ],
+                [
+                    -79.050822,
+                    35.91312
+                ]
+            ],
+            "profile": "foot-walking",
+            "responseType": "json",
+            "sources": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8"
+            ],
+            "destinations": [
+                "9",
+                "10"
+            ]
+        },
+        "engine": {
+            "version": "7.1.0",
+            "build_date": "2023-07-09T01:31:50Z",
+            "graph_date": "2023-10-15T21:44:44Z"
+        }
+    },
+    "durations": [
+        [
+            293.34,
+            412.23
+        ],
+        [
+            310.17,
+            377.54
+        ],
+        [
+            241.23,
+            391.59
+        ],
+        [
+            274.67,
+            342.05
+        ],
+        [
+            273.67,
+            425.48
+        ],
+        [
+            309.52,
+            395.04
+        ],
+        [
+            317.04,
+            384.41
+        ],
+        [
+            249.01,
+            399.37
+        ],
+        [
+            292.21,
+            359.58
+        ]
+    ],
+    "destinations": [
+        {
+            "location": [
+                -79.055097,
+                35.912504
+            ],
+            "snapped_distance": 0.26
+        },
+        {
+            "location": [
+                -79.050822,
+                35.91312
+            ],
+            "snapped_distance": 0.06
+        }
+    ],
+    "sources": [
+        {
+            "location": [
+                -79.053185,
+                35.909527
+            ],
+            "snapped_distance": 0.22
+        },
+        {
+            "location": [
+                -79.05296,
+                35.909809
+            ],
+            "snapped_distance": 0.13
+        },
+        {
+            "location": [
+                -79.053557,
+                35.910058
+            ],
+            "snapped_distance": 0.27
+        },
+        {
+            "location": [
+                -79.053164,
+                35.910197
+            ],
+            "snapped_distance": 0.59
+        },
+        {
+            "location": [
+                -79.053311,
+                35.909696
+            ],
+            "snapped_distance": 0.3
+        },
+        {
+            "location": [
+                -79.05295,
+                35.909612
+            ],
+            "snapped_distance": 0.2
+        },
+        {
+            "location": [
+                -79.052996,
+                35.909906
+            ],
+            "snapped_distance": 0.3
+        },
+        {
+            "location": [
+                -79.053557,
+                35.909851
+            ],
+            "snapped_distance": 11.04
+        },
+        {
+            "location": [
+                -79.053085,
+                35.910033
+            ],
+            "snapped_distance": 0.54
+        }
+    ]
 }
 ```
 {% endraw %}
