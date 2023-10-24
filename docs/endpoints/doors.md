@@ -5,7 +5,7 @@ parent: Endpoints
 nav_order: 6
 ---
 
-# Buildings
+# Doors
 {: .no_toc }
 
 ## Table of contents
