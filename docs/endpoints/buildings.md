@@ -16,7 +16,7 @@ nav_order: 2
 
 ---
 
-### /app/ (GET)
+### /app/building/all (GET)
 
 #### Request cURL
 ```
