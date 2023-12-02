@@ -29,8 +29,10 @@ curl https://accessnav-api-git-ctine987.apps.cloudapps.unc.edu/app/outdoorIssue/
     {
         "_id": "6242966907941f5e76b34770",
         "location": "Rosenau Hall",
+        "avoidPolygon": [],
         "latitude": 35.905877677908045,
         "longitude": -79.05360645370045,
+        "category": ["Door"]
         "description": "Automatic door broken",
         "status": "Closed",
         "datetimeOpen": 1634359400378,
@@ -44,8 +46,10 @@ curl https://accessnav-api-git-ctine987.apps.cloudapps.unc.edu/app/outdoorIssue/
     {
         "_id": "6242989036c1d86631672ab2",
         "location": "Peabody Hall",
+        "avoidPolygon": [],
         "latitude": 35.91062629670515,
         "longitude": -79.05362209913692,
+        "category": ["Maintenance"]
         "description": "Elevator maintenance",
         "status": "Closed",
         "datetimeOpen": 1644359400378,
@@ -73,9 +77,11 @@ curl https://accessnav-api-git-ctine987.apps.cloudapps.unc.edu/app/outdoorIssue/
 ```
 {
     "_id": "6242989036c1d86631672ab2",
+    "avoidPolygon": [],
     "location": "Peabody Hall",
     "latitude": 35.91062629670515,
     "longitude": -79.05362209913692,
+    "category": ["Maintenance"]
     "description": "Elevator maintenance",
     "status": "Closed",
     "datetimeOpen": 1644359400378,
@@ -95,7 +101,10 @@ curl https://accessnav-api-git-ctine987.apps.cloudapps.unc.edu/app/outdoorIssue/
 ```
 curl -X POST 'https://accessnav-api-git-ctine987.apps.cloudapps.unc.edu/app/outdoorIssue/add' -H "Content-type: application/json" -d '{
   "location": "Test Hall",
-  "category": "Test",
+  "avoidPolygon": [],
+  "latitude": 35.910172,
+  "longitude": -79.050574,
+  "category": ["Test"],
   "description": "Test outdoorIssue",
   "status": "Open",
   "datetimeOpen": 1658532213016,
@@ -112,6 +121,9 @@ curl -X POST 'https://accessnav-api-git-ctine987.apps.cloudapps.unc.edu/app/outd
     "msg": "successfully added outdoor issue",
     "data": {
         "location": "Test Hall",
+        "avoidPolygon": [],
+        "latitude": 35.910172,
+        "longitude": -79.050574,
         "category": "Test",
         "description": "Test outdoorIssue",
         "status": "Open",
@@ -144,7 +156,10 @@ curl -X PATCH 'http://accessnav-api-git-ctine987.apps.cloudapps.unc.edu/app/outd
     "oldData": {
         "_id": "63ff69ea486ef1a08b20a22a",
         "location": "Test Hall",
-        "category": "Test",
+        "avoidPolygon": [],
+        "latitude":35.910172,
+        "longitude": -79.050574,
+        "category": ["Test"],
         "description": "Test outdoorIssue",
         "status": "Open",
         "datetimeOpen": 1658532213016,
@@ -172,7 +187,10 @@ curl -X DELETE https://accessnav-api-git-ctine987.apps.cloudapps.unc.edu/app/out
     "data": {
         "_id": "63e948b91f0bdf63525ca500",
         "location": "Test Hall",
-        "category": "Test",
+        "avoidPolygon": [],
+        "latitude":35.910172,
+        "longitude": -79.050574,
+        "category": ["Test"],
         "description": "Test outdoorIssue",
         "status": "Open",
         "datetimeOpen": 1658532213016,
